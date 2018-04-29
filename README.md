@@ -1,4 +1,4 @@
-[![Windows build status](https://ci.appveyor.com/api/projects/status/github/tonerdo/readline?branch=master&svg=true)](https://ci.appveyor.com/project/tonerdo/readline)
+[![Build Status](https://travis-ci.org/rubberduck203/readline.svg?branch=master)](https://travis-ci.org/rubberduck203/readline)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![NuGet version](https://badge.fury.io/nu/ReadLine.svg)](https://www.nuget.org/packages/ReadLine)
 # ReadLine
@@ -34,18 +34,18 @@ It is cross platform and runs anywhere .NET is supported, targeting `netstandard
 
 ## Installation
 
-Available on [NuGet](https://www.nuget.org/packages/ReadLine/)
+Available on [NuGet](https://www.nuget.org/packages/Rubberduck.ReadLine/)
 
 Visual Studio:
 
 ```powershell
-PM> Install-Package ReadLine
+PM> Install-Package Rubberduck.ReadLine
 ```
 
 .NET Core CLI:
 
 ```bash
-dotnet add package ReadLine
+dotnet add package Rubberduck.ReadLine
 ```
 
 
