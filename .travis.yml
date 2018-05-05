@@ -1,0 +1,6 @@
+language: csharp
+solution: ReadLine.sln
+mono: none
+dotnet: 2.1.4
+script:
+  - ./test.sh
