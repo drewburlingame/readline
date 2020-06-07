@@ -15,6 +15,7 @@ namespace System
         }
 
         public static void AddHistory(params string[] text) => _history.AddRange(text);
+        public static void SetHistory(List<string> history) => _history = history;
         public static List<string> GetHistory() => _history;
         public static void ClearHistory() => _history = new List<string>();
         public static bool HistoryEnabled { get; set; }

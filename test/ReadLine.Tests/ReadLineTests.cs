@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
@@ -34,6 +35,15 @@ namespace ReadLine.Tests
             Assert.Equal("ls -a", GetHistory()[0]);
             Assert.Equal("dotnet run", GetHistory()[1]);
             Assert.Equal("git init", GetHistory()[2]);
+        }
+
+        [Fact]
+        public void TestSetHistoryReplacesHistory()
+        {
+            SetHistory(new List<string>{"new", "history"});
+            Assert.Equal(2, GetHistory().Count);
+            Assert.Equal("new", GetHistory()[0]);
+            Assert.Equal("history", GetHistory()[1]);
         }
 
         public void Dispose()
